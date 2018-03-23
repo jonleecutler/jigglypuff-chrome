@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "SpikePay Chrome Extension",
+	"description": "powered by SpikePay",
+	"version": "1.0",
+	"permissions": [
+		"identity",
+		"notifications"
+	],
+	"icons": {
+		"16": "img/spike_logo.png",
+		"48": "img/spike_logo.png",
+		"128": "img/spike_logo.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "img/spike_logo.png",
+			"38": "img/spike_logo.png"
+		},
+		"default_popup": "popup.html"
+	},
+	"content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com ; object-src 'self'",
+	"web_accessible_resources": [
+		"img/spike_logo.png"
+	]
+}

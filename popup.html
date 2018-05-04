@@ -2,8 +2,8 @@
 <html>
 	<head>
 	    <meta charset="utf-8">
-		<meta name="description" content="crediNet">
-		<meta name="author" content="The crediNet Team">
+		<meta name="description" content="spikePay">
+		<meta name="author" content="The spikePay Team">
 
 		<title>SpikePay</title>
 
@@ -53,21 +53,27 @@
 
 
 			<section class="panel panel-default">
-				<!-- <div class="panel-heading">
-
-				</div> -->
 
 			  <div class="panel-body">
+					Hello, <b>Saran</b> <br/><br/>
+					<div id="intro-text">
 					Checkout page detected. Do you want to use your SpikePay card details ?
+					</div>
 					<div class="col-md-offset-3 col-md-6 text-center" style="margin-bottom:10px">
 							<button type="button" class="btn btn-primary" id="yes-button">Request Token</button>		
+							<div class="loader"></div>
+							<span id="wait-text">
+									Waiting for authorization... 
+							</span>
+					</div>		
+
+					<div class="col-md-offset-3 col-md-6 text-center" style="margin-bottom:10px" id="confirm-button">
+							<div id="confirm-text">
+									Please proceed to the checkout page to complete the transaction.
+							</div>	
+						<button type="button" class="btn btn-success" >Authorized</button>		
 					</div>
-					<div class="text-center" style="margin-bottom:10px">
-							<div class="loader text-center"></div>
-					</div>	
-					<button type="button" class="btn btn-default btn-success" id='confirm-btn'>
-							<span class="glyphicon glyphicon-ok"></span> Authorized user.
-					</button>
+
 			  <div class="panel-footer">
 			  powered by <img src="img/spike_logo_long.png" height="40px"  style="margin-bottom: 5px;">
 			</div>
